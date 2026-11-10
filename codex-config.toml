@@ -1,0 +1,7 @@
+# 설치 명령이 과제 폴더의 .codex/config.toml 로 복사한다. Codex는 이 폴더에서 켤 때 이 설정을 읽는다.
+# 샌드박스 안에서 네트워크(서버 켜기, localhost 요청, 패키지 설치)를 허용한다. 작업 폴더 밖 쓰기는 그대로 막힌다.
+# 폴더를 신뢰한 상태(기본 workspace-write)에서 효과가 있다. 프로젝트 설정으로는 샌드박스 종류 자체는 못 바꾼다.
+approval_policy = "never"
+
+[sandbox_workspace_write]
+network_access = true
